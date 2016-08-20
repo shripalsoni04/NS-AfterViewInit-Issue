@@ -19,4 +19,11 @@ export class Page2Component implements AfterViewInit {
         console.log('txtEle android ', this.txtEle.nativeElement.android);
         console.log('txtEle ios ', this.txtEle.nativeElement.ios);
     }
+
+    onLoad(args){
+        console.log('after load stacklayout height is ', args.object.getMeasuredHeight());
+        console.log('after load page measured height ', this.page.getMeasuredHeight());
+        console.log('after load txtEle android ', this.txtEle.nativeElement.android);
+        console.log('after load txtEle ios ', this.txtEle.nativeElement.ios);
+    }
 }
